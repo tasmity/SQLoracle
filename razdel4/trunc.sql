@@ -1,0 +1,26 @@
+SELECT TRUNC(3.14) FROM dual;
+
+SELECT TRUNC(3.56) FROM dual;
+
+SELECT TRUNC(3.14, 0) FROM dual;
+
+SELECT TRUNC(3.56728, 1) FROM dual;
+
+SELECT TRUNC(3.56728, 2) FROM dual;
+
+select TRUNC(SALARY * 3.14) from EMPLOYEES;
+
+SELECT TRUNC(356728, -1) FROM dual;
+
+SELECT TRUNC(356728, -2) FROM dual;
+
+SELECT TRUNC(356728, -5) FROM dual;
+
+SELECT TRUNC(-3.56728, 1) FROM dual;
+
+select  TRUNC((sysdate - HIRE_DATE) * EMPLOYEE_ID) as bonus
+from EMPLOYEES;
+
+select FIRST_NAME, ROUND((sysdate - HIRE_DATE) * EMPLOYEE_ID) as bonus,
+       TRUNC((sysdate - HIRE_DATE) * EMPLOYEE_ID) as bonus2
+from EMPLOYEES;

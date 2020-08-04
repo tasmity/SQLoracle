@@ -1,0 +1,15 @@
+SELECT FIRST_NAME, upper(FIRST_NAME) FROM EMPLOYEES;
+
+SELECT upper('Privet, KAK DELa? 888') FROM DUAL;
+
+SELECT upper('Privet, ' || 'KAK DELa? 888') FROM DUAL;
+
+SELECT * FROM EMPLOYEES
+WHERE upper(FIRST_NAME) = 'DAVID';
+
+SELECT * FROM EMPLOYEES
+WHERE UPPER(FIRST_NAME) like '%EN%';
+
+SELECT upper(2 + 2 * 2) FROM dual;
+
+SELECT upper('PRIVET ' || 'SKOLko Tebe Let? ' || '21') FROM dual;
